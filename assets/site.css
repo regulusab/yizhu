@@ -102,3 +102,11 @@ sup.dq{color:#b0331f;font-size:10px;margin-left:1px;cursor:help}
 .smsec{margin:8px 0 12px}.smsec>summary{cursor:pointer;color:#1d4f80;font-size:15px}
 .smlink{font-size:14px;margin:6px 0 2px}
 .smhd{font-size:14px;color:#555}
+/* export toolbar (Word / PDF / share) */
+.exp{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 14px}
+.exp button{font:inherit;font-size:15px;padding:8px 14px;min-height:40px;border:1px solid var(--acc);background:var(--card);color:var(--acc);border-radius:8px;cursor:pointer;-webkit-appearance:none}
+.exp button:active{background:var(--acc);color:#fff}
+.exp button:disabled{opacity:.5}
+.exp #emsg{flex-basis:100%;margin:0;font-size:13px;word-break:break-all}
+.exp #emsg:empty{display:none}
+@media print{.exp{display:none}}

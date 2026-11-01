@@ -16,3 +16,7 @@
 - 覆核：維基文庫《三命通會（四庫全書本）》卷08、卷09
 
 產生程式在建置環境 `yizhu_build/smth/`（parse.py → model.py → sm_gen.py；sm_link.py 於既有頁面加入連結）。涉及死亡、刑獄、疾病、宗教之句兩本同步改作〔細節不錄〕。
+
+## 下載與分享（Word／PDF）
+
+各日柱頁與《三命通會》對照日頁設「下載 Word」「下載 PDF」「分享」三鈕（`assets/export.js`）。檔案在瀏覽器內由頁面所顯示之公開版文字產生，不經伺服器；自「求日柱」帶入時，含訪客四柱並以 ★ 標出所屬時辰與月份段落。PDF 以 `assets/tbx.js`（移植自 shishen 站）嵌入 `assets/fonts/yz-serif-tc.woff` 字型子集（Noto Serif TC／SC，SIL OFL 1.1，見 `assets/fonts/OFL.txt`）；Word 為純前端打包之 .docx。分享在 iPhone Safari 以系統分享面板分享檔案（不支援時改分享網址），再不支援則複製連結。
