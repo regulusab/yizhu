@@ -72,3 +72,33 @@ button.go{background:var(--acc);color:#fff;border:0;width:100%;font-size:18px;pa
 @media print{.top,.foot,.pn,details.toc,.you,.warn{display:none}body{background:#fff}details.hour{break-inside:avoid}details.hour>.hb{display:block}}
 tr.you-hit td{background:#fff3cf}
 .anc{display:block;position:relative;top:-60px}
+
+/* sanming comparison */
+.smtbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0}
+.smtbl table{border-collapse:collapse;font-size:14px;min-width:640px}
+.smtbl th,.smtbl td{border:1px solid var(--line);padding:3px 5px;text-align:center;white-space:nowrap}
+.smtbl th{background:#efe9df;position:sticky;left:0}
+.smtbl td a{text-decoration:none;display:block}
+.smtbl td.z a{color:#999}.smtbl td.g{background:#f3f3f3;color:#aaa}
+.smc{scroll-margin-top:60px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 12px}
+.smc>summary{padding:10px 0;cursor:pointer;font-weight:bold;font-family:"Songti TC","Noto Serif TC",serif}
+.smc>summary small{font-weight:normal;color:#777;margin-left:6px}
+.smc[open]>summary{border-bottom:1px solid var(--line)}
+.pair{display:grid;grid-template-columns:1fr;gap:8px;margin:8px 0}
+@media(min-width:720px){.pair{grid-template-columns:1fr 1fr}.pair>h4{grid-column:1/-1}}
+.pair>h4{margin:6px 0 0}
+.ed{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:#fcfbf8}
+.ed p{margin:2px 0;font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC",serif;font-size:17px;line-height:1.9;word-break:break-all}
+.ed.wyg{border-left:4px solid #8a5a2b}.ed.tx{border-left:4px solid #22344f}
+.lab{font-size:12px;color:#777}
+.ed mark{background:#ffe08a;padding:0 1px;border-radius:2px}
+.zn{font-size:13px;color:#7a6a55;background:#f2ece2;border-radius:4px;padding:0 3px;margin:0 2px}
+.rm{color:#999;font-size:14px}
+sup.dq{color:#b0331f;font-size:10px;margin-left:1px;cursor:help}
+.lac{color:#b0331f}
+.none{color:#999;font-size:14px}
+.vl{font-size:14px;margin:4px 0 10px}.vl ol{margin:4px 0;padding-left:22px}
+.vt{display:inline-block;font-size:11px;background:#eef;color:#335;border-radius:3px;padding:0 4px;margin-right:4px}
+.smsec{margin:8px 0 12px}.smsec>summary{cursor:pointer;color:#1d4f80;font-size:15px}
+.smlink{font-size:14px;margin:6px 0 2px}
+.smhd{font-size:14px;color:#555}
