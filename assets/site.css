@@ -8,9 +8,10 @@ a{color:#1d4f80}
 h1,h2,h3,h4,.gz,.brand{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC",serif}
 h1{font-size:26px;margin:14px 0 4px;line-height:1.4}h2{font-size:21px;margin:26px 0 10px;padding-bottom:4px;border-bottom:2px solid var(--line)}
 h3{font-size:18px;margin:20px 0 8px}h4{font-size:16px;margin:16px 0 6px;color:#555}
-/* --rg-nav-h set by assets/nav-offset.js from #rg-nav-host; fallback adds safe-area for iOS Safari sticky shift */
+/* --rg-nav-h set by shared nav.js on <html>; fallback until it runs */
 .top{background:var(--acc);color:#fff;position:sticky;top:var(--rg-nav-h,calc(40px + env(safe-area-inset-top,0px)));z-index:20;padding-top:0}
-body:not(:has(#rg-nav-host)) .top{top:0;padding-top:env(safe-area-inset-top,0px)}
+/* no portal nav: no safe-area padding here (nav.js owns notch padding when present) */
+body:not(:has(#rg-nav-host)) .top{top:0}
 .top .wrap{display:flex;align-items:center;gap:10px;min-height:48px;flex-wrap:wrap}
 .brand{color:#fff;text-decoration:none;font-size:20px;font-weight:bold;margin-right:auto}
 .top nav a{color:#fff;text-decoration:none;font-size:15px;padding:6px 8px;border-radius:6px}.top nav a:active{background:#ffffff22}
