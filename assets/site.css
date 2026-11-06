@@ -83,7 +83,7 @@ tr.you-hit td{background:#fff3cf}
 .smtbl th{background:#efe9df;position:sticky;left:0}
 .smtbl td a{text-decoration:none;display:block}
 .smtbl td.z a{color:#999}.smtbl td.g{background:#f3f3f3;color:#aaa}
-.smc{scroll-margin-top:140px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 12px}
+.smc{scroll-margin-top:60px;background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 12px}
 .smc>summary{padding:10px 0;cursor:pointer;font-weight:bold;font-family:"Songti TC","Noto Serif TC",serif}
 .smc>summary small{font-weight:normal;color:#777;margin-left:6px}
 .smc[open]>summary{border-bottom:1px solid var(--line)}
@@ -105,6 +105,13 @@ sup.dq{color:#b0331f;font-size:10px;margin-left:1px;cursor:help}
 .smsec{margin:8px 0 12px}.smsec>summary{cursor:pointer;color:#1d4f80;font-size:15px}
 .smlink{font-size:14px;margin:6px 0 2px}
 .smhd{font-size:14px;color:#555}
+
+.djwit{margin:6px 0 12px;border:1px dashed #9aad8a;border-radius:8px;padding:0 10px;background:#f7faf4}
+.djwit>summary{cursor:pointer;color:#3d5c34;font-size:14px;padding:8px 0}
+.djwit>summary small{color:#6a7a60;margin-left:6px;font-weight:normal}
+.djex{font-size:14px;margin:4px 0;font-family:"Songti TC","Noto Serif TC",serif;line-height:1.7}
+.djnote{color:#777;font-size:12px;margin-left:4px}
+.ed.dj{border-left:4px solid #5a7a4a}
 /* export toolbar (Word / PDF / share) */
 .exp{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 14px}
 .exp button{font:inherit;font-size:15px;padding:8px 14px;min-height:40px;border:1px solid var(--acc);background:var(--card);color:var(--acc);border-radius:8px;cursor:pointer;-webkit-appearance:none}
