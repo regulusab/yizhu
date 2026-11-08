@@ -120,3 +120,19 @@ sup.dq{color:#b0331f;font-size:10px;margin-left:1px;cursor:help}
 .exp #emsg{flex-basis:100%;margin:0;font-size:13px;word-break:break-all}
 .exp #emsg:empty{display:none}
 @media print{.exp{display:none}}
+
+/* 六親長生 attachment tables */
+.lqcs-tools{margin:14px 0}
+.lqcs-tools button{font:inherit;font-weight:600;min-height:44px;padding:9px 20px;border:1px solid var(--acc);border-radius:8px;background:var(--acc);color:#fff;cursor:pointer}
+.lqcs-tools button[aria-expanded="true"]{background:#fff;color:var(--acc)}
+.lqcs-tools button:focus-visible,.lqcs-scroll:focus-visible{outline:3px solid #b77725;outline-offset:3px}
+.lqcs-panel h2{margin-top:0}.lqcs-panel h3{font-size:17px}
+.lqcs-meta{color:#555}.lqcs-panel .note{line-height:1.7;color:#666}
+.lqcs-table{font-size:14px;line-height:1.6}
+.lqcs-table th{font-weight:400}.lqcs-table strong{font-weight:750}
+.lqcs-table th,.lqcs-table td{padding:6px;text-align:center;vertical-align:middle}
+.lqcs-lu{min-width:620px}.lqcs-lu th,.lqcs-lu td{white-space:nowrap}
+.lqcs-zhong{min-width:740px}.lqcs-zhong td:nth-child(6){text-align:left;min-width:180px}
+.lqcs-caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.lqcs-sources{border-top:1px solid var(--line);margin-top:18px}.lqcs-sources h3{font-size:15px}.lqcs-sources .note{font-size:13px}
+@media print{.lqcs-tools{display:none}.lqcs-panel[hidden]{display:block!important}.lqcs-panel{padding:8px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.lqcs-scroll{overflow:visible}.lqcs-table{min-width:100%;width:100%;table-layout:fixed;font-size:8pt}.lqcs-table th,.lqcs-table td{white-space:normal;overflow-wrap:anywhere;padding:3px}.lqcs-zhong td:nth-child(6){min-width:0}.lqcs-table tr{break-inside:avoid}}
