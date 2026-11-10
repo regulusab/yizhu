@@ -58,7 +58,7 @@ function dl(blob,name){var u=URL.createObjectURL(blob),a=document.createElement(
 /* ---- PDF ---- */
 function rasterGlyph(cp){try{var ch=String.fromCodePoint(cp),N=96,font=N+'px "PingFang TC","Noto Serif CJK TC","Noto Sans TC","PMingLiU",serif';var c=document.createElement('canvas'),g=c.getContext('2d');g.font=font;var adv=Math.max(0.25,Math.min(1.6,g.measureText(ch).width/N)),W=Math.ceil(adv*N),Hh=Math.ceil(1.2*N);c.width=W;c.height=Hh;g=c.getContext('2d');g.font=font;g.fillStyle='#000';g.textBaseline='alphabetic';g.fillText(ch,0,N);var px=g.getImageData(0,0,W,Hh).data,rb=Math.ceil(W/8),bits=new Uint8Array(rb*Hh),ink=0;for(var y=0;y<Hh;y++)for(var x=0;x<W;x++)if(px[(y*W+x)*4+3]>110){bits[y*rb+(x>>3)]|=0x80>>(x&7);ink++;}return ink?{w:W,h:Hh,bits:bits,adv:adv}:null;}catch(e){return null;}}
 var FONTP=null;
-function font(){if(!FONTP){FONTP=fetch(BASE+'assets/fonts/yz-serif-tc.woff?v=1').then(function(r){if(!r.ok)throw new Error('字型載入失敗');return r.arrayBuffer();}).then(function(b){return TBX.loadFont(b);});FONTP['catch'](function(){FONTP=null;});}return FONTP;}
+function font(){if(!FONTP){FONTP=fetch(BASE+'assets/fonts/yz-serif-tc.woff?v=2').then(function(r){if(!r.ok)throw new Error('字型載入失敗');return r.arrayBuffer();}).then(function(b){return TBX.loadFont(b);});FONTP['catch'](function(){FONTP=null;});}return FONTP;}
 var SZ={h2:15,h3:13,h4:12,h5:11,p:10.5,q:10,s:8.5,you:11};
 function pruns(b,base){var s=SZ[b.k]||10.5;return b.runs.map(function(r){return{t:r.t,s:r.sm?s*0.85:s,b:(base||r.b)?1:0,c:r.hl?'b0331f':(r.c||(b.k==='q'?'4a4038':b.k==='s'?'8a6d3b':/^h/.test(b.k)?'22344f':null))};});}
 function buildPdf(F,B,ttl){var d=new TBX.Doc(F,{raster:rasterGlyph}),ML=46,CW=d.pw-92,BOT=d.ph-50,y=50;d.newPage();
