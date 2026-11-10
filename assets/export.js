@@ -28,6 +28,7 @@ function blocks(){var out=[];
  function P(k,el,extra){var r=runsOf(el);if(extra)r.unshift(extra);if(plain(r))out.push({k:k,runs:r});}
  function walk(el,ctx){ctx=ctx||{};
   for(var c=el.firstElementChild;c;c=c.nextElementSibling){var t=c.tagName,cl=c.className||'';
+   if(t==='BUTTON')continue;
    if(/\blqcs-tools\b/.test(cl)||(c.id==='lqcs-panel'&&c.hidden))continue;
    if(SKIP.test(cl)||c.id==='you'||t==='NAV'||t==='SCRIPT')continue;
    if(t==='H1')continue;
